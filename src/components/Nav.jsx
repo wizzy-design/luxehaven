@@ -3,26 +3,28 @@ import styled from "styled-components";
 const Nav = () => {
   return (
     <Parent>
-      <div className="logo">Luxehaven</div>
-      <ul>
-        <li>
-          Home
-          <span></span>
-        </li>
-        <li>
-          Properties<span></span>
-        </li>
-        <li>
-          About Us<span></span>
-        </li>
-        <li>
-          Contact<span></span>
-        </li>
-        <li>
-          Login<span></span>
-        </li>
-        <button id="signup">Sign Up</button>
-      </ul>
+      <nav>
+        <div className="logo">Luxehaven</div>
+        <ul>
+          <li>
+            Home
+            <span></span>
+          </li>
+          <li>
+            Properties<span></span>
+          </li>
+          <li>
+            About Us<span></span>
+          </li>
+          <li>
+            Contact<span></span>
+          </li>
+          <li>
+            Login<span></span>
+          </li>
+          <button id="signup">Sign Up</button>
+        </ul>
+      </nav>
     </Parent>
   );
 };
@@ -30,17 +32,19 @@ const Nav = () => {
 // Styled components
 
 const Parent = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 90%;
-  padding: 0 4rem;
+  width: 100%;
   position: fixed;
-  top: 0;
-  display: flex;
   background: transparent;
   z-index: 10;
-  color: #ffffff;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    color: #ffffff;
+    overflow: hidden;
+  }
 
   .logo {
     margin: 1rem 0;
@@ -91,7 +95,7 @@ const Parent = styled.div`
 
       &:hover {
         background-color: #ffffff;
-        color: #515d86;
+        color: #363a5b;
       }
     }
   }
