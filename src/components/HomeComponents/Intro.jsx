@@ -1,9 +1,11 @@
 import styled from "styled-components";
 import homeBg from "../../assets/img/homeBg.png";
 
-const Intro = () => {
+// eslint-disable-next-line react/prop-types
+const Intro = ({ introRef }) => {
   return (
-    <Parent>
+    <Parent ref={introRef}>
+      {/* ref is used to tag where i want to scroll too when the scroll event is activated */}
       <Body>
         <h1>LUXEHAVEN</h1>
         <h2>This is the best time for changing life</h2>

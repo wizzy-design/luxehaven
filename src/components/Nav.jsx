@@ -1,10 +1,32 @@
 import styled from "styled-components";
+import { useEffect, useState } from "react";
 
-const Nav = () => {
+// eslint-disable-next-line react/prop-types
+const Nav = ({ handleClick }) => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    // HandleScroll function handles color change of NavBar
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 600;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrolled]);
+
   return (
-    <Parent>
+    <Parent scrolled={scrolled}>
       <nav>
-        <div className="logo">Luxehaven</div>
+        <div className="logo" onClick={handleClick}>
+          Luxehaven
+        </div>
         <ul>
           <li>
             Home
@@ -34,7 +56,12 @@ const Nav = () => {
 const Parent = styled.div`
   width: 100%;
   position: fixed;
-  background: transparent;
+  transition: background ease 0.2s;
+  background: ${({ scrolled }) => (scrolled ? "#fff" : "transparent")};
+  box-shadow: ${({ scrolled }) =>
+    scrolled
+      ? "rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;"
+      : "none"};
   z-index: 10;
 
   nav {
@@ -42,7 +69,7 @@ const Parent = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 0 5rem;
-    color: #ffffff;
+    color: ${({ scrolled }) => (scrolled ? "#100d18" : "#fff")};
     overflow: hidden;
   }
 
@@ -50,6 +77,7 @@ const Parent = styled.div`
     margin: 1rem 0;
     font-family: Didot;
     font-size: 32px;
+    cursor: pointer;
   }
 
   ul {
@@ -62,6 +90,7 @@ const Parent = styled.div`
       flex-direction: column;
       align-items: center;
       font-family: Mulish;
+      font-weight: 400;
       list-style-type: none;
       text-transform: uppercase;
       cursor: pointer;
@@ -71,7 +100,8 @@ const Parent = styled.div`
           width: 35px;
           margin-top: 1px;
           border-radius: 1.5px;
-          background-color: #ffffff;
+          background-color: ${({ scrolled }) =>
+            scrolled ? "#100d18" : "#fff"};
           transition: all ease 0.5s;
         }
       }
@@ -82,8 +112,9 @@ const Parent = styled.div`
     }
     #signup {
       padding: 0.8rem 1.8rem;
-      color: #ffffff;
-      border: 1px solid #ffffff;
+      color: ${({ scrolled }) => (scrolled ? "#100d18" : "#fff")};
+      border: ${({ scrolled }) =>
+        scrolled ? "1px solid #100d18" : "1px solid #fff"};
       border-radius: 2px;
       outline: none;
       font-family: Mulish;
@@ -94,8 +125,8 @@ const Parent = styled.div`
       cursor: pointer;
 
       &:hover {
-        background-color: #ffffff;
-        color: #363a5b;
+        background-color: ${({ scrolled }) => (scrolled ? "#100d18" : "#fff")};
+        color: ${({ scrolled }) => (scrolled ? "#fff" : "#100d18")};
       }
     }
   }
