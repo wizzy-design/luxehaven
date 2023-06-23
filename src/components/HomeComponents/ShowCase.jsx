@@ -129,4 +129,5 @@ const Arrows = styled.div`
     }
   }
 `;
+
 export default ShowCase;
