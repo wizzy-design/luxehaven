@@ -61,28 +61,29 @@ const AboutUss = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 2rem 0 3rem;
-  font-family: Mulish;
+  font-family: "Mulish", sans-serif;
 
-  .title {
+  .title h1{
     text-align: center;
     color: #fff;
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 3rem;
   }
 
   .body {
     text-align: center;
     color: #c7c6c6;
-    width: 70%;
+    width: 75%;
 
     p {
       font-size: 1.1rem;
       margin: 0;
+      line-height: 30.12px;
     }
   }
 
   .button {
-    margin: 2rem 0;
+    margin: 2.5rem 0 1.5rem 0;
 
     #readmore {
       padding: 0.8rem 1.8rem;
@@ -90,15 +91,15 @@ const AboutUss = styled.div`
       border: none;
       border-radius: 2px;
       outline: none;
-      font-family: Mulish;
+      font-family: "Mulish", sans-serif;
       font-size: 1rem;
       text-transform: uppercase;
       background: #fff;
       transition: all ease 0.5s;
       cursor: pointer;
 
-      .svg{
-        margin-left: .5rem;
+      .svg {
+        margin-left: 0.5rem;
       }
 
       &:hover {

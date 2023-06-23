@@ -58,9 +58,10 @@ const Head = styled.div`
   width: 100%;
 
   .title {
-    font-family: Mulish;
+    font-family: "Mulish", sans-serif;
     font-size: 3rem;
     padding-bottom: 1rem;
+    font-weight: 600;
   }
 
   #view_all {
@@ -69,7 +70,7 @@ const Head = styled.div`
     border: 1px solid #100d18;
     border-radius: 2px;
     outline: none;
-    font-family: Mulish;
+    font-family: "Mulish", sans-serif;
     font-size: 1rem;
     text-transform: uppercase;
     background: transparent;
@@ -102,7 +103,7 @@ const Body = styled.div`
   }
   h2 {
     position: absolute;
-    font-family: Mulish;
+    font-family: "Mulish", sans-serif;
     font-size: 2rem;
     font-weight: 600;
     color: #fff;

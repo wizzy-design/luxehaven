@@ -43,7 +43,7 @@ const Body = styled.div`
 
   h2 {
     margin: 0;
-    font-family: "Mulish", sans-serif;
+    font-family: "'Mulish', sans-serif;", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.5rem;

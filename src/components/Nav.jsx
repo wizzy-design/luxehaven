@@ -75,8 +75,9 @@ const Parent = styled.div`
 
   .logo {
     margin: 1rem 0;
-    font-family: Didot;
+    font-family: 'GFS Didot', serif;
     font-size: 32px;
+    font-weight: 400;
     cursor: pointer;
   }
 
@@ -89,7 +90,7 @@ const Parent = styled.div`
       display: flex;
       flex-direction: column;
       align-items: center;
-      font-family: Mulish;
+      font-family: "Mulish", sans-serif;
       font-weight: 400;
       list-style-type: none;
       text-transform: uppercase;
@@ -117,7 +118,7 @@ const Parent = styled.div`
         scrolled ? "1px solid #100d18" : "1px solid #fff"};
       border-radius: 2px;
       outline: none;
-      font-family: Mulish;
+      font-family: "Mulish", sans-serif;
       font-size: 1rem;
       text-transform: uppercase;
       background: transparent;
