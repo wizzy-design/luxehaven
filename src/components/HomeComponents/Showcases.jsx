@@ -6,7 +6,7 @@ import whiteArrow from "../../assets/icons/whiteArrow.svg";
 import blackArrow from "../../assets/icons/blackArrow.svg";
 // Dependencies
 import styled from "styled-components";
-import ShowCase from "./Showcase";
+import ShowCase from "./Show";
 
 const Showcases = () => {
   return (

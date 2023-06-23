@@ -2,7 +2,7 @@
 // Dependencies
 import styled from "styled-components";
 
-const ShowCase = (props) => {
+const Show = (props) => {
   return (
     <Parent>
       <Head>
@@ -130,4 +130,4 @@ const Arrows = styled.div`
   }
 `;
 
-export default ShowCase;
+export default Show;
