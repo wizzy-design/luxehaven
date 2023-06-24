@@ -72,27 +72,48 @@ const Parent = styled.div`
   .body {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 4rem;
     color: #c7c6c6;
 
     .img {
       display: inline-block;
       img {
-        width: 20rem;
+        width: 22rem;
       }
     }
 
     .faqs {
-      width: 40%;
+      width: 45%;
       .questions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         color: #c7c6c6;
         cursor: pointer;
+        margin: 0.8rem 0;
+        font-size: 1.2rem;
+        font-weight: 400;
         font-family: "Mulish", sans-serif;
+
+        img {
+          width: 1.5rem;
+          padding: 0.3rem;
+          border: 0.5px solid #fff;
+          border-radius: 50%;
+          transition: all ease 0.5s;
+        }
+
+        .rotated {
+          transition: all ease 0.5s;
+          transform: rotate(-45deg);
+        }
       }
       .answer {
-        color: #c7c6c6;
+        color: #a1a1a1;
         width: 80%;
+        font-size: 1.1rem;
         font-family: "Mulish", sans-serif;
+        line-height: 30.12px;
       }
       .faq-line {
         width: 100%;
