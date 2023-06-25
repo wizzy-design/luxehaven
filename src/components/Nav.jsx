@@ -8,7 +8,7 @@ const Nav = ({ handleClick }) => {
   useEffect(() => {
     // HandleScroll function handles color change of NavBar
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 600;
+      const isScrolled = window.scrollY > 200;
       if (isScrolled !== scrolled) {
         setScrolled(isScrolled);
       }
