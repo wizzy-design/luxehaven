@@ -1,34 +1,17 @@
 /* eslint-disable react/prop-types */
 import styled from "styled-components";
-import { useState, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 
 const ProImg = ({ img, title, body }) => {
-  const [isVisible, setIsVisible] = useState(false);
-  const imageRef = useRef(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const element = imageRef.current;
-      const elementRect = element.getBoundingClientRect();
-      const isInView =
-        elementRect.left < window.innerWidth && elementRect.right >= 0;
-
-      setIsVisible(isInView);
-    };
-
-    // handleScroll(); // Initial check on component mount
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
-    <Parent isVisible={isVisible}>
-      <div className="image">
-        <img src={img} alt="Images" />
-      </div>
+    <Parent>
+      <motion.div
+        className="image"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <motion.img src={img} alt="Images" />
+      </motion.div>
       <div className="desc">
         <h2>{title}</h2>
         <p>{body}</p>
@@ -38,15 +21,13 @@ const ProImg = ({ img, title, body }) => {
 };
 
 // Styled Components
-const Parent = styled.div`
+const Parent = styled(motion.div)`
   .image {
     img {
       width: 20rem;
       height: 17rem;
       object-fit: cover;
     }
-    opacity: ${(props) => (props.isVisible ? 1 : 0.5)};
-    transition: opacity 0.5s ease;
   }
 
   .desc {
