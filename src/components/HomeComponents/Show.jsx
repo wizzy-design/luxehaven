@@ -62,6 +62,7 @@ const Head = styled.div`
     font-size: 3rem;
     padding-bottom: 1rem;
     font-weight: 600;
+    color: #100d18;
   }
 
   #view_all {

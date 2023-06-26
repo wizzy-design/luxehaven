@@ -88,7 +88,7 @@ const Parent = styled.div`
   .img-container {
     display: flex;
     gap: 2rem;
-    overflow-x: auto;
+    overflow-x: scroll;
     scroll-behavior: smooth;
     scrollbar-width: none;
     padding-right: 4rem;

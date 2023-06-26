@@ -13,7 +13,7 @@ const Showcases = () => {
     <Parent>
       <ShowCase
         title="APARTMENT"
-        fill="#000"
+        fill="#100d18"
         img={apartment1}
         label="Apartment"
         arrow1={blackArrow}
@@ -21,7 +21,7 @@ const Showcases = () => {
       />
       <ShowCase
         title="PENTHOUSE"
-        fill="#000"
+        fill="#100d18"
         img={apartment2}
         label="Penthouse"
         arrow1={blackArrow}

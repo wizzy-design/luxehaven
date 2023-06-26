@@ -1,14 +1,19 @@
 /* eslint-disable react/prop-types */
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { useRef } from "react";
 
 const ProImg = ({ img, title, body }) => {
+  const scrollRef = useRef(null);
   return (
-    <Parent>
+    <Parent ref={scrollRef}>
       <motion.div
         className="image"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ root: scrollRef }}
       >
         <motion.img src={img} alt="Images" />
       </motion.div>
