@@ -53,7 +53,7 @@ const AboutUs = () => {
 // Styled Components
 const Parent = styled.div`
   background: #100d18;
-  padding: 0 5rem;
+  padding: 3.5rem 5rem;
 `;
 
 const AboutUss = styled.div`

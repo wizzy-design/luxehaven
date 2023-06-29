@@ -23,7 +23,7 @@ const Footer = () => {
       {/* Second part of the footer */}
       <Body>
         {/* First List */}
-        <div className="list">
+        <div className="list list1">
           <h2>Luxehaven</h2>
           <div className="list-icons">
             <img src={facebook} alt="FaceBook" />
@@ -47,6 +47,8 @@ const Footer = () => {
           <ul>
             <li>+234 1 567 890</li>
             <li>+234 2 587 890</li>
+            <br />
+            <br />
             <li>DM US:</li>
             <li>Luxehaven@example.com</li>
           </ul>
@@ -63,17 +65,17 @@ const Footer = () => {
       </Body>
 
       {/* Last part of the footer */}
-      <div className="footer-last">
+      <Last>
         <div className="line"></div>
-        <div>2023 Luxehaven Apartments </div>
-      </div>
+        <div className="foot">2023 Luxehaven Apartments &copy;</div>
+      </Last>
     </Parent>
   );
 };
 
 // Styled Components
 const Parent = styled.div`
-  padding: 6rem 0 0 5rem;
+  padding: 5rem 0 0 0rem;
   color: #d6d5d5;
   background-color: #100d18;
   font-family: "Mulish", sans-serif;
@@ -111,16 +113,56 @@ const Head = styled.div`
 `;
 
 const Body = styled.div`
-padding-top: 4rem;
+  padding: 4rem 0 2rem 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 6.5rem;
 
   .list {
+    h2 {
+      font-weight: 500;
+    }
     ul {
       padding-left: 0;
       text-align: left;
       list-style-type: none;
+      li {
+        line-height: 20.08px;
+      }
     }
+  }
+
+  .list1 {
+    h2 {
+      margin: 19.92px 0;
+      font-size: 1.8rem;
+      color: #ffffff;
+      font-weight: 400;
+      font-family: "GFS Didot", serif;
+    }
+    .list-icons {
+      display: flex;
+      gap: 1rem;
+      cursor: pointer;
+      img {
+        width: 2rem;
+      }
+    }
+  }
+`;
+
+const Last = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .line {
+    margin: 2rem 0;
+    width: 80%;
+    height: 1px;
+    background-color: #a1a1a1;
+  }
+  .foot{
+    padding: 0 0 2rem 0;
   }
 `;
 
