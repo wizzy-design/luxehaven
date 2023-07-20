@@ -178,6 +178,7 @@ const Right = styled.div`
     color: #fff;
     font-family: "Montaga", sans-serif;
     font-size: 1.2rem;
+    transition: background-color 0.5s ease;
   }
 
   /* Individual anchor elements */
