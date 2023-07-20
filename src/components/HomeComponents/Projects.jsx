@@ -64,7 +64,7 @@ const Projects = () => {
 // Styled components
 const Parent = styled.div`
   padding: 6rem 0 2rem 5rem;
-  background-color: #100d18;
+  background: #303539;
 
   .title {
     padding-bottom: 1rem;

@@ -7,15 +7,17 @@ const Intro = ({ introRef }) => {
     <Parent ref={introRef}>
       {/* ref is used to tag where i want to scroll too when the scroll event is activated */}
       <Body>
-        <h1>LUXEHAVEN</h1>
-        <h2>This is the best time for changing life</h2>
+        <h1>Luxury Reimagined</h1>
+        <h2>
+          Discover Unparalleled Luxury and Indulge in Exquisite Living at
+          Luxehaven
+        </h2>
       </Body>
     </Parent>
   );
 };
 
 // Styled components
-
 const Parent = styled.div`
   position: relative;
   height: 100vh;
@@ -34,7 +36,8 @@ const Body = styled.div`
 
   h1 {
     margin: 0;
-    font-family: "GFS Didot", serif;
+    width: max-content;
+    font-family: "Bonky free personal use";
     font-weight: 400;
     font-style: normal;
     font-size: 6rem;
@@ -43,11 +46,13 @@ const Body = styled.div`
 
   h2 {
     margin: 0;
-    font-family: "'Mulish', sans-serif;", sans-serif;
+    color: #fff;
+    text-align: center;
+    font-family: Montaga;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 30px;
+    line-height: normal;
   }
 `;
 

@@ -3,8 +3,10 @@ import styled from "styled-components";
 // Assets & Components
 import HomePage from "./pages/HomePage";
 import GlobalStyle from "./styles/GlobalStyles";
+import Fonts from "./fonts/Font";
 import Nav from "../src/components/Nav";
 import { useRef } from "react";
+
 
 function App() {
   const introRef = useRef(null);  // Reference to Intro Page
@@ -20,6 +22,7 @@ function App() {
   return (
     <Wrap>
       <GlobalStyle />
+      <Fonts />
       <Nav handleClick={handleClick}/>
       <HomePage introRef={introRef}/>
     </Wrap>

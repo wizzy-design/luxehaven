@@ -1,13 +1,14 @@
 import styled from "styled-components";
-// import blackDiagArrow from "../../assets/icons/blackDiagonalArrow.svg";
+import apartment2 from "../../assets/img/apartment2.png";
 
 const AboutUs = () => {
   return (
     <Parent>
+      <Title>
+        <h1>ABOUT US</h1>
+      </Title>
+      {/* Left section with write-up and button */}
       <AboutUss>
-        <div className="title">
-          <h1>ABOUT US</h1>
-        </div>
         <div className="body">
           <p>
             This is not just an apartment, but a special space. It must be
@@ -46,34 +47,61 @@ const AboutUs = () => {
           </button>
         </div>
       </AboutUss>
+      {/* Display image right of the write-up */}
+      <DisplayImg>
+        <img src={apartment2} alt="Parlour" />
+      </DisplayImg>
     </Parent>
   );
 };
 
 // Styled Components
+// const Parent = styled.div`
+//   display: flex;
+//   /* flex-direction: column; */
+//   align-items: center;
+//   background: #303539;
+//   padding: 3.5rem 5rem;
+
+//   .title h1 {
+//     display: ;
+//     text-align: center;
+//     color: #fff;
+//     font-weight: 600;
+//     font-size: 3rem;
+//   }
+// `;
+
 const Parent = styled.div`
-  background: #100d18;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr; /* Two rows: title and the rest of the content */
+  column-gap: 4rem;
+  align-items: center;
+  justify-items: center;
+  background: #303539;
   padding: 3.5rem 5rem;
 `;
 
-const AboutUss = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem 0 3rem;
-  font-family: "Mulish", sans-serif;
-
-  .title h1{
+const Title = styled.div`
+  font-family: "Montaga", sans-serif;
+  grid-column: 1/3;
+  h1 {
     text-align: center;
     color: #fff;
     font-weight: 600;
     font-size: 3rem;
   }
+`;
+
+const AboutUss = styled.div`
+  width: 100%;
+  padding: 2rem 0 3rem;
 
   .body {
-    text-align: center;
+    margin: 0 2rem;
+    /* text-align: center; */
     color: #c7c6c6;
-    width: 75%;
 
     p {
       font-size: 1.1rem;
@@ -83,7 +111,7 @@ const AboutUss = styled.div`
   }
 
   .button {
-    margin: 2.5rem 0 1.5rem 0;
+    margin: 2.5rem 0 1.5rem 2rem;
 
     #readmore {
       padding: 0.8rem 1.8rem;
@@ -91,7 +119,7 @@ const AboutUss = styled.div`
       border: none;
       border-radius: 2px;
       outline: none;
-      font-family: "Mulish", sans-serif;
+      font-family: "Montaga", sans-serif;
       font-size: 1rem;
       text-transform: uppercase;
       background: #fff;
@@ -103,7 +131,7 @@ const AboutUss = styled.div`
       }
 
       &:hover {
-        background-color: #100d18;
+        background: #303539;
         color: #fff;
         border: 1px solid #fff;
 
@@ -112,6 +140,13 @@ const AboutUss = styled.div`
         }
       }
     }
+  }
+`;
+
+const DisplayImg = styled.div`
+  width: 100%;
+  img {
+    width: 100%;
   }
 `;
 

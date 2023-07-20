@@ -57,7 +57,7 @@ const Faq = () => {
 
 // Styled Componenets
 const Parent = styled.div`
-  background-color: #100d18;
+  background: #303539;
   padding: 1rem 5rem 3rem 5rem;
 
   .title {

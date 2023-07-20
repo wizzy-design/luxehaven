@@ -77,7 +77,7 @@ const Footer = () => {
 const Parent = styled.div`
   padding: 5rem 0 0 0rem;
   color: #d6d5d5;
-  background-color: #100d18;
+  background: #303539;
   font-family: "Mulish", sans-serif;
 
   h1 {
@@ -161,7 +161,7 @@ const Last = styled.div`
     height: 1px;
     background-color: #a1a1a1;
   }
-  .foot{
+  .foot {
     padding: 0 0 2rem 0;
   }
 `;
