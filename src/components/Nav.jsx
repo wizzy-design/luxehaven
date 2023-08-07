@@ -43,8 +43,8 @@ const Nav = ({ handleClick }) => {
               </a>
             </li>
             <li>
-              <a href="#" id="burg">
-                <img src={burger} alt="Burger" />
+              <a href="#" id="burg_anchor">
+                <img src={burger} id="burg" alt="Burger" />
               </a>
             </li>
           </ul>
@@ -98,7 +98,7 @@ const Parent = styled.div`
 
   .logo {
     margin: 1rem 0;
-    font-size: 32px;
+    font-size: 1.8rem;
     font-weight: 400;
     cursor: pointer;
     color: #fff;
@@ -177,21 +177,31 @@ const Right = styled.div`
     padding: 0.5rem;
     color: #fff;
     font-family: "Montaga", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     transition: background-color 0.5s ease;
   }
 
   /* Individual anchor elements */
   #text {
-    padding: 0.8rem 1rem;
+    padding: 0.6rem 0.8rem;
     &:hover {
       background-color: #6c89a0;
-      border-radius: 2rem;
+      border-radius: 2rem;  
     }
   }
 
-  #lang,
+  #lang {
+    width: 36px;
+    height: 36px;
+  }
+
   #burg {
+    width: 24.8px;
+    height: 21.59px;
+  }
+
+  #lang,
+  #burg_anchor {
     &:hover {
       background-color: #6c89a0;
       border-radius: 50%;

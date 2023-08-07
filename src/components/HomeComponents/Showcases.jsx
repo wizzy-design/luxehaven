@@ -1,6 +1,6 @@
 // Image
 import apartment1 from "../../assets/img/apartment1.png";
-import apartment2 from "../../assets/img/apartment2.png";
+// import apartment2 from "../../assets/img/apartment2.png";
 //  Icons
 import whiteArrow from "../../assets/icons/whiteArrow.svg";
 import blackArrow from "../../assets/icons/blackArrow.svg";
@@ -16,14 +16,6 @@ const Showcases = () => {
         fill="#100d18"
         img={apartment1}
         label="Apartment"
-        arrow1={blackArrow}
-        arrow2={whiteArrow}
-      />
-      <ShowCase
-        title="PENTHOUSE"
-        fill="#100d18"
-        img={apartment2}
-        label="Penthouse"
         arrow1={blackArrow}
         arrow2={whiteArrow}
       />

@@ -68,7 +68,7 @@ const Parent = styled.div`
 
   .title {
     padding-bottom: 1rem;
-    font-family: "Mulish", sans-serif;
+    font-family: Bonky free personal use;
     color: #fff;
     font-size: 3rem;
     font-weight: 600;
@@ -78,7 +78,7 @@ const Parent = styled.div`
   .sub-title {
     width: 30rem;
     padding-bottom: 3rem;
-    font-family: "Mulish", sans-serif;
+    font-family: "Montaga", sans-serif;
     color: #c7c6c6;
     font-size: 1.1rem;
     font-weight: 300;

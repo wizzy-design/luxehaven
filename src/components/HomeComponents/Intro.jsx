@@ -53,21 +53,22 @@ const Body = styled.div`
 
   h1 {
     margin: 0;
+    padding-top: 2.5rem;
     width: max-content;
     font-family: "Bonky free personal use";
     font-weight: 400;
     font-style: normal;
-    font-size: 5.5rem;
-    line-height: 126px;
+    font-size: 4.5rem;
+    line-height: 110px;
   }
 
   h2 {
     margin: 0;
     color: #fff;
     text-align: center;
-    width: 80%;
+    width: 90%;
     font-family: Montaga;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -77,9 +78,9 @@ const Body = styled.div`
 const Button = styled.button`
   display: flex;
   margin-top: 2rem;
-  padding: 0.35rem 0.5rem 0.35rem 2rem;
+  padding: 0.25rem 0.5rem 0.25rem 2rem;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #fff;
   font-family: "Montaga", sans-serif;
   background: transparent;
@@ -91,6 +92,7 @@ const Button = styled.button`
   img {
     transform: rotate(0deg);
     transition: transform 0.5s ease;
+    width: 2.5rem;
   }
 
   &:hover {

@@ -30,13 +30,13 @@ const Parent = styled(motion.div)`
   .image {
     img {
       width: 20rem;
-      height: 17rem;
+      height: 15rem;
       object-fit: cover;
     }
   }
 
   .desc {
-    font-family: "Mulish", sans-serif;
+    font-family: "Montaga", sans-serif;
 
     h2 {
       margin: 0.5rem 0 0 0;

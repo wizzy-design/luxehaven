@@ -84,7 +84,7 @@ const Parent = styled.div`
 `;
 
 const Title = styled.div`
-  font-family: "Montaga", sans-serif;
+  font-family: Bonky free personal use;
   grid-column: 1/3;
   h1 {
     text-align: center;
