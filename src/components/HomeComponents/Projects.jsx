@@ -69,8 +69,8 @@ const Parent = styled.div`
   .title {
     padding-bottom: 1rem;
     font-family: Bonky free personal use;
-    color: #fff;
-    font-size: 3rem;
+    color: #d6d2ce;
+    font-size: 2.7rem;
     font-weight: 600;
     text-transform: uppercase;
   }
@@ -80,7 +80,7 @@ const Parent = styled.div`
     padding-bottom: 3rem;
     font-family: "Montaga", sans-serif;
     color: #c7c6c6;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 30.12px;
   }

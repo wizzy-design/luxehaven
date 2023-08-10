@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import display from "../../assets/img/faq.png";
+// import display2 from "../../assets/img/faq2.png";
 import Toggle from "./Toggle";
 import { LayoutGroup } from "framer-motion";
 
@@ -58,47 +59,44 @@ const Faq = () => {
 // Styled Componenets
 const Parent = styled.div`
   background: #303539;
-  padding: 1rem 5rem 3rem 5rem;
+  padding: 1rem 5rem 3rem 0rem;
 
   .title {
     margin-bottom: 4rem;
     text-align: center;
-    color: #fff;
+    color: #d6d2ce;
     font-weight: 600;
     font-size: 3rem;
-    font-family: "'Mulish', sans-serif;", sans-serif;
+    font-family: Bonky free personal use;
   }
 
   .body {
     display: flex;
-    justify-content: center;
-    gap: 4rem;
+    gap: 6rem;
     color: #c7c6c6;
 
     .img {
-      display: inline-block;
       img {
-        width: 22rem;
+        width: 400px;
       }
     }
 
     .faqs {
-      width: 45%;
+      width: 52%;
       .questions {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        color: #c7c6c6;
+        color: #a1a1a1;
         cursor: pointer;
         margin: 0.8rem 0;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: 400;
-        font-family: "Mulish", sans-serif;
-
+        font-family: "Montaga", sans-serif;
         img {
           width: 1.5rem;
           padding: 0.3rem;
-          border: 0.5px solid #fff;
+          border: 0.5px solid #a1a1a1;
           border-radius: 50%;
           transition: all ease 0.5s;
         }
@@ -109,10 +107,10 @@ const Parent = styled.div`
         }
       }
       .answer {
-        color: #a1a1a1;
+        color: #afafaf;
         width: 80%;
-        font-size: 1.1rem;
-        font-family: "Mulish", sans-serif;
+        font-size: 1rem;
+        font-family: "Montaga", sans-serif;
         line-height: 30.12px;
       }
       .faq-line {

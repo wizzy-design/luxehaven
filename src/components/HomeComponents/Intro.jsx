@@ -8,7 +8,6 @@ const Intro = ({ introRef }) => {
   return (
     <Parent ref={introRef}>
       {/* ref is used to tag where i want to scroll too when the scroll event is activated */}
-      {/* <img src={whiteDownArrow} id="next" alt="Arrow to take to next page" /> */}
       <Body>
         <h1>Luxury Reimagined</h1>
         <h2>
@@ -16,7 +15,8 @@ const Intro = ({ introRef }) => {
           Luxehaven
         </h2>
         <Button>
-          Explore Our Apartments <img src={whiteArrow} alt="Direction arrow" />
+          Explore Our Apartments
+          <img src={whiteArrow} alt="Direction arrow" />
         </Button>
       </Body>
     </Parent>
@@ -81,6 +81,7 @@ const Button = styled.button`
   padding: 0.25rem 0.5rem 0.25rem 2rem;
   align-items: center;
   font-size: 1rem;
+  height: 50px;
   color: #fff;
   font-family: "Montaga", sans-serif;
   background: transparent;
@@ -92,13 +93,13 @@ const Button = styled.button`
   img {
     transform: rotate(0deg);
     transition: transform 0.5s ease;
-    width: 2.5rem;
+    width: 2.2rem;
   }
 
   &:hover {
     img {
       transition: transform 0.5s ease;
-      transform: rotate(45deg);
+      transform: rotate(45deg) scale(1.2);
     }
   }
 `;

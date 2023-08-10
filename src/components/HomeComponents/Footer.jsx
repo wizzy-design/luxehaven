@@ -10,8 +10,8 @@ const Footer = () => {
       {/* First part of the footer */}
       <Head>
         <div className="title">
-          <h1>Let’s work </h1>
-          <h1>together</h1>
+          <h1>Live your </h1>
+          <h1>dream home</h1>
         </div>
         <div className="sub-title">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl
@@ -89,10 +89,11 @@ const Head = styled.div`
   display: flex;
   justify-content: center;
   gap: 15rem;
-  padding: 2rem 0 8rem 0;
+  padding: 2rem 0 6rem 0;
 
   .title {
     h1 {
+      font-family: Bonky free personal use;
       font-weight: 400;
       font-size: 3.2rem;
       color: #fff;
@@ -106,9 +107,10 @@ const Head = styled.div`
   .sub-title {
     position: relative;
     width: 35%;
-    color: #a1a1a1;
-    top: 8rem;
+    color: #bebebe;
+    top: 4rem;
     line-height: 20.08px;
+    font-family: "Montaga", sans-serif;
   }
 `;
 
@@ -121,13 +123,17 @@ const Body = styled.div`
   .list {
     h2 {
       font-weight: 500;
+      font-family: "Montaga", sans-serif;
+      color: #bebebe;
     }
     ul {
       padding-left: 0;
       text-align: left;
       list-style-type: none;
       li {
-        line-height: 20.08px;
+        line-height: 25.08px;
+        font-family: "Montaga", sans-serif;
+        color: #bebebe;
       }
     }
   }
@@ -156,12 +162,14 @@ const Last = styled.div`
   flex-direction: column;
   align-items: center;
   .line {
-    margin: 2rem 0;
+    margin: 2rem 0 1.5rem 0;
     width: 80%;
     height: 1px;
     background-color: #a1a1a1;
   }
   .foot {
+    font-family: "Montaga", sans-serif;
+    color: #bebebe;
     padding: 0 0 2rem 0;
   }
 `;
