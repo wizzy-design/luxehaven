@@ -1,5 +1,5 @@
 import Intro from "../components/HomeComponents/Intro";
-import Showcases from "../components/HomeComponents/Showcases";
+// import Showcases from "../components/HomeComponents/Showcases";
 import AboutUs from "../components/HomeComponents/AboutUS";
 import Faq from "../components/HomeComponents/Faq";
 import Projects from "../components/HomeComponents/Projects";
@@ -11,9 +11,9 @@ const HomePage = ({ introRef }) => {
     <>
       <Intro introRef={introRef} />
       {/* Passing introRef by prop drilling */}
-      <Showcases />
-      <Projects />
       <AboutUs />
+      {/* <Showcases /> */}
+      <Projects />
       <Faq />
       <Footer />
     </>
