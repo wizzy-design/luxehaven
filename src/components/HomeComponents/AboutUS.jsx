@@ -24,7 +24,7 @@ const AboutUs = () => {
           <p>
             You can find impeccable venues on this platform. Top designers from
             all over the world worked on their interiors, creating truly stylish
-            and special projects. Why is aesthetics so important to us?
+            and special Spaces. Why is aesthetics so important to us?
           </p>
         </div>
         <div className="button">
@@ -59,11 +59,11 @@ const AboutUs = () => {
 
 const Parent = styled.div`
   display: flex;
-  gap: 3rem;
+  gap: 4rem;
   align-items: center;
   justify-items: center;
-  background: #d6d2ce;
-  padding: 2.5rem 0;
+  background: #fff;
+  margin: 2.5rem 4rem 2.5rem 2rem;
 `;
 
 // "About Us" Title
@@ -71,7 +71,7 @@ const Title = styled.div`
   font-family: Bonky free personal use;
   h1 {
     padding: 0 2rem;
-    color: #303539;
+    color: #101010;
     font-weight: 600;
     font-size: 2.7rem;
   }
@@ -79,12 +79,12 @@ const Title = styled.div`
 
 // "About us" Body
 const AboutUss = styled.div`
-  width: 100%;
-  padding: 2rem 0rem 3rem 3rem;
+  width: 90%;
+  padding: 2rem 0rem 3rem 0rem;
 
   .body {
     margin: 0 2rem;
-    color: #303539;
+    color: #101010;
 
     p {
       font-family: "Montaga", sans-serif;
@@ -106,7 +106,7 @@ const AboutUss = styled.div`
       outline: none;
       font-family: "Montaga", sans-serif;
       font-size: 1rem;
-      background: #303539;
+      background: #101010;
       transition: all ease 0.5s;
       cursor: pointer;
 
@@ -128,7 +128,7 @@ const AboutUss = styled.div`
 `;
 
 const DisplayImg = styled.div`
-  width: 75%;
+  width: 65%;
   img {
     width: 100%;
   }

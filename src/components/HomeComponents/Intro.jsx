@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import homeBg from "../../assets/img/homeBg.png";
 import whiteArrow from "../../assets/icons/whiteIntroArrow.svg";
-// import whiteDownArrow from "../../assets/icons/IntroWhiteDownArrow.svg";
-
 // eslint-disable-next-line react/prop-types
 const Intro = ({ introRef }) => {
   return (
@@ -29,7 +27,12 @@ const Parent = styled.div`
   height: 100vh;
   background-size: cover;
   background-position: center;
-  background-image: url(${homeBg});
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(${homeBg});
 
   /* #next{
     position: absolute;

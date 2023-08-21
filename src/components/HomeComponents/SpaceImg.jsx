@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 
-const ProImg = ({ img, title, body }) => {
+const SpaceImg = ({ img, title, body }) => {
   const scrollRef = useRef(null);
   return (
     <Parent ref={scrollRef}>
@@ -55,4 +55,4 @@ const Parent = styled(motion.div)`
   }
 `;
 
-export default ProImg;
+export default SpaceImg;

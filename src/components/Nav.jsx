@@ -114,7 +114,7 @@ const Parent = styled.div`
   width: 100%;
   position: fixed;
   transition: background ease 0.2s;
-  background: ${({ scrolled }) => (scrolled ? "#D6D2CE" : "transparent")};
+  background: ${({ scrolled }) => (scrolled ? "#101010" : "transparent")};
   box-shadow: ${({ scrolled }) =>
     scrolled
       ? "rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;"
@@ -125,7 +125,7 @@ const Parent = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.3rem 5rem;
+    padding: 0.3rem 4rem;
     overflow: hidden;
   }
 
@@ -134,7 +134,7 @@ const Parent = styled.div`
     font-size: 1.8rem;
     font-weight: 400;
     cursor: pointer;
-    color: ${({ scrolled }) => (scrolled ? "#303539" : "#fff")};
+    color: #fff;
     font-family: Bonky free personal use;
     font-style: normal;
   }
@@ -157,7 +157,7 @@ const Right = styled.div`
   a {
     text-decoration: none;
     padding: 0.5rem;
-    color: ${({ scrolled }) => (scrolled ? "#303539" : "#fff")};
+    color: #fff;
     font-family: "Montaga", sans-serif;
     font-size: 1rem;
     transition: background-color 0.5s ease;
@@ -175,13 +175,13 @@ const Right = styled.div`
   #lang {
     width: 36px;
     height: 36px;
-    fill: ${({ scrolled }) => (scrolled ? "#303539" : "#fff")};
+    /* fill: ${({ scrolled }) => (scrolled ? "#303539" : "#fff")}; */
   }
 
   .burger {
     width: 24.8px;
     height: 21.59px;
-    stroke: ${({ scrolled }) => (scrolled ? "#303539" : "#fff")};
+    /* stroke: ${({ scrolled }) => (scrolled ? "#303539" : "#fff")}; */
   }
 
   #lang_container,
