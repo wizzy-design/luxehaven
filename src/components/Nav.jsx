@@ -167,7 +167,7 @@ const Right = styled.div`
   #text {
     padding: 0.6rem 0.8rem;
     &:hover {
-      background-color: ${({ scrolled }) => (scrolled ? "#A1A1A1" : "#6c89a0")};
+      background-color: ${({ scrolled }) => (scrolled ? "#55564869" : "#6c89a0")};
       border-radius: 2rem;
     }
   }
@@ -187,7 +187,7 @@ const Right = styled.div`
   #lang_container,
   #burg_anchor {
     &:hover {
-      background-color: ${({ scrolled }) => (scrolled ? "#A1A1A1" : "#6c89a0")};
+      background-color: ${({ scrolled }) => (scrolled ? "#55564869" : "#6c89a0")};
       border-radius: 50%;
     }
   }

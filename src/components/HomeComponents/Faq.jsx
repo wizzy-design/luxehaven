@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import display from "../../assets/img/faq.png";
-// import display2 from "../../assets/img/faq2.png";
 import Toggle from "./Toggle";
 import { LayoutGroup } from "framer-motion";
 
@@ -9,9 +7,6 @@ const Faq = () => {
     <Parent>
       <h1 className="title">FAQ</h1>
       <div className="body">
-        <div className="img">
-          <img src={display} alt="FAQ" />
-        </div>
         <LayoutGroup>
           <div className="faqs">
             <Toggle title="Is there a mobile app for Luxehaven?" line={true}>
@@ -58,31 +53,23 @@ const Faq = () => {
 
 // Styled Componenets
 const Parent = styled.div`
-  background: #303539;
-  padding: 1rem 5rem 3rem 0rem;
+  background: #101010;
+  padding: 1rem 10rem 3rem 9.8rem;
 
   .title {
     margin-bottom: 4rem;
     text-align: center;
-    color: #d6d2ce;
+    color: #fff;
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: Bonky free personal use;
   }
 
   .body {
-    display: flex;
-    gap: 6rem;
     color: #c7c6c6;
 
-    .img {
-      img {
-        width: 400px;
-      }
-    }
-
     .faqs {
-      width: 52%;
+      /* width: 70%; */
       .questions {
         display: flex;
         align-items: center;
@@ -94,7 +81,7 @@ const Parent = styled.div`
         font-weight: 400;
         font-family: "Montaga", sans-serif;
         img {
-          width: 1.5rem;
+          width: 1rem;
           padding: 0.3rem;
           border: 0.5px solid #a1a1a1;
           border-radius: 50%;

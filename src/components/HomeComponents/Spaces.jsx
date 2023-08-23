@@ -67,7 +67,7 @@ const Spaces = () => {
 
 // Styled components
 const Parent = styled.div`
-  padding: 6rem 0 8rem 4rem;
+  padding: 6rem 0 6rem 4rem;
   background: #101010;
 
   .img-container {
